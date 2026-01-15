@@ -14,7 +14,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Your Health, Our Priority</h1>
+          <h1>Your Health, Our Priority, Always</h1>
           <p>Modern Medical Care Combined with Holistic Wellness</p>
           <button className="cta-button" onClick={handleScheduleClick}>Schedule an Appointment</button>
         </div>
