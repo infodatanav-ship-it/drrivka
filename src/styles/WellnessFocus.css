@@ -1,0 +1,61 @@
+/* =========================
+   WELLNESS FOCUS SECTION
+   ========================= */
+.wellness-focus {
+    padding: 5rem 0;
+    background: white;
+}
+
+.wellness-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wellness-text h2 {
+    font-size: 2.2rem;
+    color: #0066cc;
+    margin-bottom: 1.5rem;
+}
+
+.wellness-text p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.wellness-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.wellness-list li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #2c3e50;
+}
+
+.wellness-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #00a86b;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .wellness-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .wellness-text h2 {
+        font-size: 1.8rem;
+    }
+}

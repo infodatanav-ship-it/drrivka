@@ -1,0 +1,222 @@
+/* =========================
+   ABOUT US PAGE
+   ========================= */
+.doctor-profile {
+    padding: 5rem 0;
+    background: white;
+}
+
+.doctor-profile .container {
+    max-width: 1200px;
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-content h2 {
+    font-size: 2.2rem;
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+.credentials {
+    color: #00a86b;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.profile-content p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Mission & Values */
+.mission-values {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+}
+
+.mission-values .container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mission-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #0066cc;
+}
+
+.mission-card:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card h3 {
+    color: #0066cc;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission-card p {
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+/* Expertise */
+.expertise {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+}
+
+.expertise .container {
+    max-width: 1200px;
+}
+
+.expertise h2 {
+    font-size: 2.5rem;
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.expertise-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-item h4 {
+    color: #0066cc;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.expertise-item p {
+    color: #7f8c8d;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 5rem 0;
+    background: white;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00a86b;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.quote {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.author {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+/* Commitment */
+.commitment {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+}
+
+.commitment .container {
+    max-width: 1200px;
+}
+
+.commitment h2 {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.commitment > .container > p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.commitment-list {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.commitment-list li {
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+.commitment-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .profile-layout,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise h2,
+    .testimonials h2,
+    .commitment h2 {
+        font-size: 2rem;
+    }
+}

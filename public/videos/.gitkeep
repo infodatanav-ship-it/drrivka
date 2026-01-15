@@ -1,0 +1,6 @@
+# Place your intro video here
+# Supported formats: .mp4
+
+# To use a local video:
+# 1. Add your intro-video.mp4 file here
+# 2. Update VideoIntro.js to use a <video> tag instead of the YouTube iframe
