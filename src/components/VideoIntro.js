@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/VideoIntro.css';
 
 function VideoIntro() {
-  const [showVideo, setShowVideo] = useState(true);
+  const [showVideo, setShowVideo] = useState(false);
   const [videoError, setVideoError] = useState(false);
 
   const closeVideo = () => {
